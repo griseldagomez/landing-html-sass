@@ -93,7 +93,7 @@ article {
   }
 
   img {
-    width: 25vw;
+    width: 200px;
     border-radius: 19px;
   }
 }
@@ -126,7 +126,7 @@ section {
       row-gap: 80px;
 
       .product-card {
-        width: 14vw;
+        width: 200px;
         background-color: $secundary-color;
         color: $primary-text-color;
         padding: 20px;
@@ -148,8 +148,8 @@ section {
           align-items: center;
 
           img {
-            width: 12vw;
-            height: 30vh;
+            width: 200px;
+            height: 250px;
             object-fit: cover;
             border-radius: 6px;
           }
