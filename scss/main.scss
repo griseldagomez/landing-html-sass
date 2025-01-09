@@ -388,6 +388,30 @@ section {
   }
 }
 
+@media (max-width: 720px) {
+  .location {
+    $text-color: #e86424;
+    color: $text-color;
+    h2 {
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
+    .map {
+      @include flexCenter(row, center, center);
+      padding-bottom: 50px;
+      img{
+        background-size: cover;
+      }
+    }
+    h3,
+    p {
+      font-size: $paragraph-size;
+    }
+  }
+}
+
+
+
 footer {
   background-color: $quaternion-color;
   width: 100%;

@@ -326,6 +326,29 @@ section .furniture .card-section .product-card {
   font-size: 1.5em;
 }
 
+@media (max-width: 720px) {
+  .location {
+    color: #e86424;
+  }
+  .location h2 {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .location .map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .location .map img {
+    background-size: cover;
+  }
+  .location h3,
+  .location p {
+    font-size: 1.5em;
+  }
+}
 footer {
   background-color: orange;
   width: 100%;
