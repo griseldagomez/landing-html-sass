@@ -342,6 +342,7 @@ section .furniture .card-section .product-card {
     padding-bottom: 50px;
   }
   .location .map img {
+    width: 100%;
     background-size: cover;
   }
   .location h3,
