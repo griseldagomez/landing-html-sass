@@ -5,19 +5,20 @@ $primary-text-color: #7c6a0a;
 $quaternion-color: orange;
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5em;
+$paragraph-movil: 1.5em;
 
-@mixin flexCenter($direction,$content,$align){
-	display: flex;
-	flex-direction: $direction;
-	justify-content: $content;
-	align-items: $align;
+@mixin flexCenter($direction, $content, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
 }
 
-@mixin buttonStyle{
-	button{
-		background: none;
-		border-style: none;
-	}
+@mixin buttonStyle {
+  button {
+    background: none;
+    border-style: none;
+  }
 }
 
 body {
@@ -51,6 +52,23 @@ nav {
   }
 }
 
+@media (max-width: 760px) {
+  nav {
+    padding: 10;
+    p {
+      font-size: $paragraph-movil;
+      padding-left: 20px;
+    }
+    .iconss {
+      display: flex;
+      gap: 10px;
+      width: 26px;
+      height: 26px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
 article {
   display: flex;
   color: $primary-text-color;
@@ -60,7 +78,7 @@ article {
   justify-content: space-between;
   padding-top: 70px;
 
-  .impac-section {
+  .impact-section {
     display: flex;
     flex-direction: column;
 
@@ -86,17 +104,65 @@ article {
     border-style: none;
     color: white;
     font-size: 1em;
-    &:hover{
-        transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1);
     }
     transition: transform 0.2s;
   }
 
   img {
-    width: 250px;
-    height: 350px ;
+    width: 300px;
+    height: 350px;
     border-radius: 19px;
-    margin-right: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  article {
+    display: flex;
+    color: $primary-text-color;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .impact-section {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding-top: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    p {
+      font-size: $paragraph-movil;
+    }
+
+    button {
+      width: 20vw;
+      padding: 10px;
+      background-color: $quaternion-color;
+      border-radius: 20px;
+      border-style: none;
+      color: white;
+      font-size: 1em;
+      &:hover {
+        transform: scale(1.1);
+      }
+      transition: transform 0.2s;
+    }
+
+    img {
+      width: 280px;
+      margin-left: 9px;
+      border-radius: 19px;
+    }
   }
 }
 
@@ -160,6 +226,7 @@ section {
       }
     }
   }
+
   .furniture {
     @extend.healthcare;
     .card-section {
@@ -171,80 +238,127 @@ section {
   }
 }
 
-.about-us{
-    padding-bottom: 60px;
-    h2{
-        font-weight: bold;
-        padding: 60px;
+@media (max-width: 760px) {
+  section {
+    width: auto;
+    height: auto;
+    padding: 30px;
+
+    h2 {
+      color: $primary-text-color;
+      font-size: $paragraph-movil;
     }
-    .mission-section{
-        @include flexCenter(row, center, center);
-        gap: 100px;
-        .earth{ $text-color: #E86424;
-			width: 30vw;
-			display:flex;
-			gap:30px;
-			color: $text-color;
-            img{
-				object-fit: contain;
-				
-			}
-            p{
-                text-align: center;
-                font-size: $paragraph-size;
+
+    .healthcare {
+      .card-section {
+        .product-card {
+          width: 260px;
+          height: 400px;
+
+          .product-image {
+            img {
+              width: 230px;
+              height: 250px;
+              object-fit: cover;
+              border-radius: 6px;
             }
+          }
         }
-       
+      }
     }
-    .innovation{
-		@extend .earth;
-	}
+
+    .furniture {
+      .product-card {
+        width: 260px;
+        height: 400px;
+
+        .product-image {
+          img {
+            width: 230px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
 }
 
-.gallery{
-    h2{
-		font-weight: bold;
-		padding-bottom: 60px;
-	}
-    .gallery-images{
-		@include flexCenter(row, space-evenly ,center);
-		img{
-			width: 28vw;
-			height: 45vh;
-			object-fit: cover;
-			object-position: 5px 35%;
-			border-radius: 16px;
-			&:hover{
-				transform: scale(1.1);//pequeño zoom.
-			}
-            transition: transform 0.2s;
-		}
-	}
+.about-us {
+  padding-bottom: 60px;
+  h2 {
+    font-weight: bold;
+    padding: 60px;
+  }
+  .mission-section {
+    @include flexCenter(row, center, center);
+    gap: 100px;
+    .earth {
+      $text-color: #e86424;
+      width: 30vw;
+      display: flex;
+      gap: 30px;
+      color: $text-color;
+      img {
+        object-fit: contain;
+      }
+      p {
+        text-align: center;
+        font-size: $paragraph-size;
+      }
+    }
+  }
+  .innovation {
+    @extend .earth;
+  }
 }
 
-.location{
-	$text-color: #E86424;
-	color: $text-color;
-	h2{
-		padding-bottom: 60px;
-		padding-top: 60px;
-	}
-	.map{
-		@include flexCenter(row, center ,center);
-		padding-bottom: 50px;
-	}
-	h3,p{
-		font-size: $paragraph-size;
-	}
+.gallery {
+  h2 {
+    font-weight: bold;
+    padding-bottom: 60px;
+  }
+  .gallery-images {
+    @include flexCenter(row, space-evenly, center);
+    img {
+      width: 28vw;
+      height: 45vh;
+      object-fit: cover;
+      object-position: 5px 35%;
+      border-radius: 16px;
+      &:hover {
+        transform: scale(1.1); //pequeño zoom.
+      }
+      transition: transform 0.2s;
+    }
+  }
+}
+
+.location {
+  $text-color: #e86424;
+  color: $text-color;
+  h2 {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .map {
+    @include flexCenter(row, center, center);
+    padding-bottom: 50px;
+  }
+  h3,
+  p {
+    font-size: $paragraph-size;
+  }
 }
 
 footer {
-  background-color:$quaternion-color;
+  background-color: $quaternion-color;
   width: 100%;
   padding: 40px;
   color: white;
   .social-media {
-    @include flexCenter(row,center,center);
+    @include flexCenter(row, center, center);
     gap: 40px;
     padding-bottom: 40px;
   }

@@ -28,6 +28,22 @@ nav .icons button {
   border-style: none;
 }
 
+@media (max-width: 760px) {
+  nav {
+    padding: 10;
+  }
+  nav p {
+    font-size: 1.5em;
+    padding-left: 20px;
+  }
+  nav .iconss {
+    display: flex;
+    gap: 10px;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 25px;
+  }
+}
 article {
   display: flex;
   color: #7c6a0a;
@@ -37,7 +53,7 @@ article {
   justify-content: space-between;
   padding-top: 70px;
 }
-article .impac-section {
+article .impact-section {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -65,12 +81,54 @@ article button:hover {
   transform: scale(1.1);
 }
 article img {
-  width: 250px;
+  width: 300px;
   height: 350px;
   border-radius: 19px;
-  margin-right: 20px;
+  margin-top: 50px;
 }
 
+@media (max-width: 760px) {
+  article {
+    display: flex;
+    color: #7c6a0a;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  article .impact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 20px;
+  }
+  article h1 {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+  article p {
+    font-size: 1.5em;
+  }
+  article button {
+    width: 20vw;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    font-size: 1em;
+    transition: transform 0.2s;
+  }
+  article button:hover {
+    transform: scale(1.1);
+  }
+  article img {
+    width: 280px;
+    margin-left: 9px;
+    border-radius: 19px;
+  }
+}
 section {
   width: auto;
   height: auto;
@@ -134,6 +192,39 @@ section .furniture .card-section .product-card {
   color: white;
 }
 
+@media (max-width: 760px) {
+  section {
+    width: auto;
+    height: auto;
+    padding: 30px;
+  }
+  section h2 {
+    color: #7c6a0a;
+    font-size: 1.5em;
+  }
+  section .healthcare .card-section .product-card, section .furniture .card-section .product-card {
+    width: 260px;
+    height: 400px;
+  }
+  section .healthcare .card-section .product-card .product-image img, section .furniture .card-section .product-card .product-image img {
+    width: 230px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+  }
+  section .furniture .product-card {
+    width: 260px;
+    height: 400px;
+  }
+  section .furniture .product-card .product-image img {
+    width: 230px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+  }
+}
 .about-us {
   padding-bottom: 60px;
 }
@@ -152,7 +243,7 @@ section .furniture .card-section .product-card {
   width: 30vw;
   display: flex;
   gap: 30px;
-  color: #E86424;
+  color: #e86424;
 }
 .about-us .mission-section .earth img, .about-us .mission-section .innovation img {
   -o-object-fit: contain;
@@ -187,7 +278,7 @@ section .furniture .card-section .product-card {
 }
 
 .location {
-  color: #E86424;
+  color: #e86424;
 }
 .location h2 {
   padding-bottom: 60px;
@@ -200,7 +291,8 @@ section .furniture .card-section .product-card {
   align-items: center;
   padding-bottom: 50px;
 }
-.location h3, .location p {
+.location h3,
+.location p {
   font-size: 1.5em;
 }
 
