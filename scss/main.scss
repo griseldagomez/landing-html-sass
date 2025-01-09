@@ -5,7 +5,7 @@ $primary-text-color: #7c6a0a;
 $quaternion-color: orange;
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5em;
-$paragraph-movil: 1.5em;
+$paragraph-movil: 1.3em;
 
 @mixin flexCenter($direction, $content, $align) {
   display: flex;
@@ -169,7 +169,7 @@ article {
 section {
   width: auto;
   height: auto;
-  padding: 60px;
+  padding: 0 60px;
 
   h2 {
     color: $primary-text-color;
@@ -242,7 +242,7 @@ section {
   section {
     width: auto;
     height: auto;
-    padding: 30px;
+    padding: 0 30px;
 
     h2 {
       color: $primary-text-color;
@@ -313,6 +313,42 @@ section {
     @extend .earth;
   }
 }
+
+@media (max-width:720px){
+  .about-us{
+    h2 {
+      font-weight: bold;
+      padding: 30px;
+    }
+
+    .mission-section {
+      @include flexCenter(column, start, start);
+      gap: 100px;
+
+      .earth {
+        $text-color: #e86424;
+        width: 10vw;
+        display: flex;
+        gap: 15px;
+        color: $text-color;
+
+        img {
+          object-fit: contain;
+          width: 80px;
+        }
+
+        p {
+          text-align: center;
+          font-size: $paragraph-movil;
+          padding: 10px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+
 
 .gallery {
   h2 {

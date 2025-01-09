@@ -33,7 +33,7 @@ nav .icons button {
     padding: 10;
   }
   nav p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding-left: 20px;
   }
   nav .iconss {
@@ -108,7 +108,7 @@ article img {
     margin: 0px;
   }
   article p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   article button {
     width: 20vw;
@@ -132,7 +132,7 @@ article img {
 section {
   width: auto;
   height: auto;
-  padding: 60px;
+  padding: 0 60px;
 }
 section h2 {
   color: #7c6a0a;
@@ -196,11 +196,11 @@ section .furniture .card-section .product-card {
   section {
     width: auto;
     height: auto;
-    padding: 30px;
+    padding: 0 30px;
   }
   section h2 {
     color: #7c6a0a;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   section .healthcare .card-section .product-card, section .furniture .card-section .product-card {
     width: 260px;
@@ -252,6 +252,36 @@ section .furniture .card-section .product-card {
 .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
   text-align: center;
   font-size: 1.5em;
+}
+@media (max-width: 720px) {
+  .about-us h2 {
+    font-weight: bold;
+    padding: 30px;
+  }
+  .about-us .mission-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 100px;
+  }
+  .about-us .mission-section .earth, .about-us .mission-section .innovation {
+    width: 10vw;
+    display: flex;
+    gap: 15px;
+    color: #e86424;
+  }
+  .about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 80px;
+  }
+  .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 10px;
+  }
 }
 .gallery h2 {
   font-weight: bold;
