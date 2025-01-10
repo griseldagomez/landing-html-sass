@@ -74,29 +74,25 @@ article {
   color: $primary-text-color;
   width: auto;
   padding-left: 45px;
-  padding-right: 45px;
-  justify-content: space-between;
-  padding-top: 70px;
-
+  justify-content: space-around;
+  gap: 50px;
   .impact-section {
     display: flex;
     flex-direction: column;
-
     gap: 25px;
     padding-top: 50px;
+    justify-content: space-around;
+    h1 {
+      font-size: 3em;
+      padding: 0px;
+      margin: 0px;
+    }
+    p {
+      font-size: $paragraph-size;
+      max-width: 600px;
+    }
   }
-
-  h1 {
-    font-size: 3em;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  p {
-    font-size: $paragraph-size;
-  }
-
-  button {
+    button {
     padding: 20px;
     background-color: $quaternion-color;
     border-radius: 35px;
@@ -114,6 +110,8 @@ article {
     height: 350px;
     border-radius: 19px;
     margin-top: 50px;
+    margin-right: 100px;
+  
   }
 }
 
@@ -173,6 +171,7 @@ section {
   h2 {
     color: $primary-text-color;
     font-size: 2em;
+    padding-top: 30px;
   }
 
   .healthcare {
