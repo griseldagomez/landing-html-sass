@@ -49,8 +49,7 @@ article {
   color: #7c6a0a;
   width: auto;
   padding-left: 45px;
-  justify-content: space-around;
-  gap: 50px;
+  justify-content: space-between;
 }
 article .impact-section {
   display: flex;
@@ -84,8 +83,7 @@ article img {
   width: 300px;
   height: 350px;
   border-radius: 19px;
-  margin-top: 50px;
-  margin-right: 100px;
+  margin: 80px;
 }
 
 @media (max-width: 760px) {
