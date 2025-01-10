@@ -97,7 +97,6 @@ article {
   }
 
   button {
-    width: 12vw;
     padding: 20px;
     background-color: $quaternion-color;
     border-radius: 35px;
@@ -125,7 +124,7 @@ article {
     width: auto;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 0 25px 50px;
     padding: 0 10px;
 
     .impact-section {
@@ -146,8 +145,6 @@ article {
     }
 
     button {
-      width: 20vw;
-      padding: 10px;
       background-color: $quaternion-color;
       border-radius: 20px;
       border-style: none;
@@ -161,7 +158,8 @@ article {
 
     img {
       width: 280px;
-      margin-left: 9px;
+      margin: 50px auto;
+      display: block;
       border-radius: 19px;
     }
   }
@@ -370,6 +368,11 @@ section {
       transition: transform 0.2s;
     }
   }
+}
+
+@media (max-width:720px){
+
+
 }
 
 .location {

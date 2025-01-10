@@ -68,7 +68,6 @@ article p {
   font-size: 1.5em;
 }
 article button {
-  width: 12vw;
   padding: 20px;
   background-color: orange;
   border-radius: 35px;
@@ -94,7 +93,7 @@ article img {
     width: auto;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 0 25px 50px;
     padding: 0 10px;
   }
   article .impact-section {
@@ -112,8 +111,6 @@ article img {
     font-size: 1.3em;
   }
   article button {
-    width: 20vw;
-    padding: 10px;
     background-color: orange;
     border-radius: 20px;
     border-style: none;
@@ -126,7 +123,8 @@ article img {
   }
   article img {
     width: 280px;
-    margin-left: 9px;
+    margin: 50px auto;
+    display: block;
     border-radius: 19px;
   }
 }
