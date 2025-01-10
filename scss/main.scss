@@ -400,6 +400,10 @@ section {
   .map {
     @include flexCenter(row, center, center);
     padding-bottom: 50px;
+    img {
+      width: 100%;
+      background-size: cover;
+    }
   }
   .text{
     margin: 0 auto;
