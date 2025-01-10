@@ -6,7 +6,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-nav {
+nav.head {
   display: flex;
   justify-content: space-between;
   background-color: #ffefe7;
@@ -15,15 +15,15 @@ nav {
   color: #7c6a0a;
   padding: 15px;
 }
-nav p {
+nav.head p {
   font-size: 1.5em;
   padding-left: 30px;
 }
-nav .icons {
+nav.head .icons {
   display: flex;
   gap: 15px;
 }
-nav .icons button {
+nav.head .icons button {
   background: none;
   border-style: none;
 }
@@ -338,6 +338,7 @@ section .furniture .card-section .product-card {
 .location h2 {
   padding-bottom: 60px;
   padding-top: 60px;
+  margin: 0 auto;
 }
 .location .map {
   display: flex;
@@ -346,8 +347,11 @@ section .furniture .card-section .product-card {
   align-items: center;
   padding-bottom: 50px;
 }
-.location h3,
-.location p {
+.location .text {
+  margin: 0 auto;
+}
+.location .text h3,
+.location .text p {
   font-size: 1.5em;
 }
 
@@ -373,20 +377,86 @@ section .furniture .card-section .product-card {
   .location h3 {
     font-size: 1.3em;
   }
-  .location p {
+  .location .text {
+    margin: 0 auto;
+  }
+  .location .text h3,
+  .location .text p {
     font-size: 1.1em;
   }
 }
 footer {
   background-color: orange;
-  padding: 40px;
+  padding: 50px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+footer nav h3 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+footer nav ul {
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+}
+footer nav ul li {
+  list-style-type: none;
 }
 footer .social-media {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 30px;
+}
+footer .social-media img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 720px) {
+  footer {
+    background-color: orange;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: column;
+  }
+  footer nav h3 {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  footer nav ul {
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0;
+  }
+  footer nav ul li {
+    list-style-type: none;
+  }
+  footer .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .social-media img {
+    width: 28px;
+    height: 28px;
+  }
 }/*# sourceMappingURL=main.css.map */
