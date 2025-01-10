@@ -95,6 +95,7 @@ article img {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+    padding: 0 10px;
   }
   article .impact-section {
     display: flex;
