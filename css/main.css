@@ -256,6 +256,7 @@ section .furniture .card-section .product-card {
   .about-us h2 {
     font-weight: bold;
     padding: 30px;
+    font-size: 1.3em;
   }
   .about-us .mission-section {
     display: flex;
@@ -267,19 +268,20 @@ section .furniture .card-section .product-card {
   .about-us .mission-section .earth, .about-us .mission-section .innovation {
     width: 10vw;
     display: flex;
-    gap: 15px;
+    gap: 10px;
     color: #e86424;
   }
   .about-us .mission-section .earth img, .about-us .mission-section .innovation img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 80px;
+    margin: 0 20px;
   }
   .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px;
   }
 }
 .gallery h2 {
@@ -308,22 +310,26 @@ section .furniture .card-section .product-card {
 
 @media (max-width: 720px) {
   .gallery h2 {
-    padding: 30px;
+    padding-bottom: 60px;
   }
-  .gallery-images {
+  .gallery .gallery-images {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
-  .gallery-images img {
-    width: 80px;
-    height: auto;
+  .gallery .gallery-images img {
+    width: 100px;
+    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 5px 35%;
        object-position: 5px 35%;
     border-radius: 16px;
+    transition: transform 0.2s;
+  }
+  .gallery .gallery-images img:hover {
+    transform: scale(1.1);
   }
 }
 .location {
@@ -364,9 +370,11 @@ section .furniture .card-section .product-card {
     width: 100%;
     background-size: cover;
   }
-  .location h3,
+  .location h3 {
+    font-size: 1.3em;
+  }
   .location p {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 }
 footer {

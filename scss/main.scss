@@ -318,6 +318,7 @@ section {
     h2 {
       font-weight: bold;
       padding: 30px;
+      font-size: $paragraph-movil;
     }
 
     .mission-section {
@@ -328,19 +329,20 @@ section {
         $text-color: #e86424;
         width: 10vw;
         display: flex;
-        gap: 15px;
+        gap: 10px;
         color: $text-color;
 
         img {
           object-fit: contain;
           width: 80px;
+          margin: 0 20px;
         }
 
         p {
           text-align: center;
-          font-size: $paragraph-movil;
+          font-size: 1.1em;
           padding: 10px;
-          margin: 10px;
+          margin: 10px 10px;
         }
       }
     }
@@ -373,20 +375,23 @@ section {
 @media (max-width:720px){
   .gallery{
     h2{
-      padding: 30px;
+      padding-bottom: 60px;
     }
-  }
   .gallery-images {
     @include flexCenter(row, space-evenly, center);
     img {
-      width: 20vw
-      height: auto;
+      width: 100px;
+      height: 250px;
       object-fit: cover;
       object-position: 5px 35%;
       border-radius: 16px;
+      &:hover {
+        transform: scale(1.1); //pequeño zoom.
+      }
+      transition: transform 0.2s;
     }
   }
-
+}
 }
 
 .location {
@@ -422,9 +427,11 @@ section {
         background-size: cover;
       }
     }
-    h3,
+    h3 {
+      font-size: $paragraph-movil;
+    }
     p {
-      font-size: $paragraph-size;
+      font-size:1.1em;
     }
   }
 }
@@ -441,3 +448,4 @@ footer {
     padding-bottom: 40px;
   }
 }
+
