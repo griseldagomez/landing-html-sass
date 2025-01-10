@@ -371,7 +371,21 @@ section {
 }
 
 @media (max-width:720px){
-
+  .gallery{
+    h2{
+      padding: 30px;
+    }
+  }
+  .gallery-images {
+    @include flexCenter(row, space-evenly, center);
+    img {
+      width: 20vw
+      height: auto;
+      object-fit: cover;
+      object-position: 5px 35%;
+      border-radius: 16px;
+    }
+  }
 
 }
 

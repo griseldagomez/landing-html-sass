@@ -306,6 +306,26 @@ section .furniture .card-section .product-card {
   transform: scale(1.1);
 }
 
+@media (max-width: 720px) {
+  .gallery h2 {
+    padding: 30px;
+  }
+  .gallery-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .gallery-images img {
+    width: 80px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 5px 35%;
+       object-position: 5px 35%;
+    border-radius: 16px;
+  }
+}
 .location {
   color: #e86424;
 }
