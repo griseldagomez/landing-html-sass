@@ -453,7 +453,7 @@ footer .social-media img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
   footer .social-media img {
     width: 28px;
