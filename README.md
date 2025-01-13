@@ -29,7 +29,7 @@ SASS: Para una gestión eficiente y escalable de estilos.
 Flexbox: Para un diseño responsivo y flexible.
 
 🛠️ Mejoras Futuras
-Integrar animaciones con CSS.
+Integrar más animaciones con CSS.
 Añadir funcionalidad dinámica con JavaScript.
 Implementar un formulario funcional para contacto o captación de datos.
 Optimización SEO para mejorar el posicionamiento.
