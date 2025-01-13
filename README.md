@@ -8,9 +8,6 @@ El objetivo de esta página es presentar un ecommerce y marca de una manera clar
 - **Diseño moderno y responsivo**: Adaptado para verse bien en dispositivos móviles, tabletas y escritorios.
 - **Optimización del CSS**: Uso de **SASS** para una estructura de estilos modular y escalable.
 
-## 📂 Estructura del Proyecto
-
-
 ## 🚀 Cómo Usar
 
 1. **Clonar el repositorio**  
