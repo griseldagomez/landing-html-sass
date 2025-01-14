@@ -77,8 +77,6 @@ article {
   justify-content: space-between;
 
   .impact-section {
-    padding-left: 45px;
-    padding-right: 45px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -111,7 +109,9 @@ article {
     width: 300px;
     height: 350px;
     border-radius: 19px;
-    margin: 50px 100px;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 40px;
   }
 }
 
