@@ -52,6 +52,8 @@ article {
   justify-content: space-between;
 }
 article .impact-section {
+  padding-left: 45px;
+  padding-right: 45px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -83,7 +85,7 @@ article img {
   width: 300px;
   height: 350px;
   border-radius: 19px;
-  margin: 80px;
+  margin: 50px 100px;
 }
 
 @media (max-width: 760px) {
@@ -347,6 +349,10 @@ section .furniture .card-section .product-card {
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
+}
+.location .map img {
+  width: 100%;
+  background-size: cover;
 }
 .location .text {
   margin: 0 auto;

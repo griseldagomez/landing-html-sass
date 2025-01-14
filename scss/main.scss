@@ -77,6 +77,8 @@ article {
   justify-content: space-between;
 
   .impact-section {
+    padding-left: 45px;
+    padding-right: 45px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -92,7 +94,7 @@ article {
       max-width: 600px;
     }
   }
-    button {
+  button {
     padding: 20px;
     background-color: $quaternion-color;
     border-radius: 35px;
@@ -109,7 +111,7 @@ article {
     width: 300px;
     height: 350px;
     border-radius: 19px;
-    margin: 80px;
+    margin: 50px 100px;
   }
 }
 
@@ -395,7 +397,7 @@ section {
   h2 {
     padding-bottom: 60px;
     padding-top: 60px;
-    margin:  0 auto;
+    margin: 0 auto;
   }
   .map {
     @include flexCenter(row, center, center);
@@ -405,13 +407,14 @@ section {
       background-size: cover;
     }
   }
-  .text{
+  .text {
     margin: 0 auto;
-  h3,
-  p {
-    font-size: $paragraph-size;
+    h3,
+    p {
+      font-size: $paragraph-size;
+    }
   }
-}}
+}
 
 @media (max-width: 720px) {
   .location {
@@ -432,16 +435,15 @@ section {
     h3 {
       font-size: $paragraph-movil;
     }
-    .text{
+    .text {
       margin: 0 auto;
-    h3,
-    p {
-      font-size: 1.1em;
-    }}
+      h3,
+      p {
+        font-size: 1.1em;
+      }
+    }
   }
 }
-
-
 
 footer {
   background-color: $quaternion-color;
@@ -450,70 +452,68 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-    nav{
-      display: flex;
-      flex-direction: column;
-      h3 {
-        font-size: $paragraph-size;
-        margin-bottom: 30px;
-        margin-top: 0;
-      }
-      ul {
-        font-size: $paragraph-movil;
-        padding: 0;
-        margin: 0;
+  nav {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: $paragraph-size;
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+    ul {
+      font-size: $paragraph-movil;
+      padding: 0;
+      margin: 0;
       li {
         list-style-type: none;
       }
     }
-    }
-  
+  }
+
   .social-media {
     @include flexCenter(row, center, center);
     gap: 30px;
     img {
       width: 40px;
       height: 40px;
-      
     }
-
   }
 }
 
 @media (max-width: 720px) {
-footer{
-  background-color: $quaternion-color;
-  padding: 30px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  nav{
+  footer {
+    background-color: $quaternion-color;
+    padding: 30px;
+    color: white;
     display: flex;
-    flex-direction: column;
-    h3 {
-      font-size: $paragraph-movil;
-      margin-bottom: 30px;
-      margin-top: 0;
-    }
-    ul {
-      font-size: 1.1em;
-      padding: 0;
-      margin: 0;
-    li {
-      list-style-type: none;
-    }
-  }
-  }
-  .social-media {
-    @include flexCenter(row, center, center);
-    gap: 10px;
-    // padding-bottom: 80px;
-
-    img {
-      width: 28px;
-      height: 28px;
+    justify-content: space-between;
+    align-items: flex-start;
+    nav {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: $paragraph-movil;
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
+      ul {
+        font-size: 1.1em;
+        padding: 0;
+        margin: 0;
+        li {
+          list-style-type: none;
+        }
       }
     }
-  }  
+    .social-media {
+      @include flexCenter(row, center, center);
+      gap: 10px;
+      // padding-bottom: 80px;
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
 }
